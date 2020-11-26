@@ -1,0 +1,15 @@
+apiVersion: skaffold/v2beta10
+kind: Config
+build:
+  artifacts:
+    - image: test-app
+      context: kube/test-app
+deploy:
+  kubectl:
+    manifests:
+      - kube/*
+portForward:
+  - resourceType: deployment
+    resourceName: test_app
+    port: 8000
+    localPort: 9000
