@@ -27,7 +27,9 @@ setup(
     },
 
     install_requires=[
+        'fastapi',
         'PyYAML',
+        'uvicorn',
     ],
     extras_require={
         "testing": [

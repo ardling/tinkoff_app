@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-test-app = {editable = true, path = ".", extras = ["testing"]}
+test-app = {extras = ["testing"], editable = true, path = "."}
 rope = "*"
 pylint = "*"
 mypy = "*"
