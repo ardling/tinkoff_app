@@ -3,13 +3,13 @@ kind: Config
 build:
   artifacts:
     - image: test-app
-      context: kube/test-app
+      context: .
 deploy:
   kubectl:
     manifests:
-      - kube/*
+      - kube/dev/*
 portForward:
   - resourceType: deployment
-    resourceName: test_app
-    port: 8000
-    localPort: 9000
+    resourceName: test_app1
+    port: 8001
+    localPort: 8000
