@@ -10,6 +10,6 @@ deploy:
       - kube/dev/*
 portForward:
   - resourceType: deployment
-    resourceName: test_app1
-    port: 8001
+    resourceName: test_app
+    port: 8000
     localPort: 8000
