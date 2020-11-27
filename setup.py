@@ -28,6 +28,7 @@ setup(
 
     install_requires=[
         'fastapi',
+        'gunicorn',
         'PyYAML',
         'uvicorn',
     ],
